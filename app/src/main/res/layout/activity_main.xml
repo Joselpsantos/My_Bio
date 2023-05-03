@@ -16,10 +16,61 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-thin"
-            android:text="Somthing somwthing"
+            android:text="José Santos"
             android:textAlignment="center"
             android:textColor="@color/purple_200"
             android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/nicknameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/what_is_your_nickname" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <!-- present the users nickname -->
+        <Button
+            android:id="@+id/nickNameBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/btnValue" />
+
+        <TextView
+            android:id="@+id/showNickNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:paddingLeft="10dp"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <!-- present the users cv -->
+        <TextView
+            android:id="@+id/userCVTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingLeft="10dp"
+            android:text="@string/userCVTextView" />
+    </ScrollView>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
